@@ -15,7 +15,7 @@ function Navbar() {
   ]
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center h-20 px-4 text-black nav" style={{backgroundImage: 'linear-gradient(180deg, rgb(193, 248, 64), rgb(255, 167, 5))'}}>
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center h-20 px-4 text-black nav" style={{background: "rgb(195, 240, 252)"}}>
       <div className='cm-logo'>
         <h1 className="text-5xl font-signature ml-2">
           <a className="link-underline link-underline-black" href="/" rel="noreferrer">
