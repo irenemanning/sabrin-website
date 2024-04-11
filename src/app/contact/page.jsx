@@ -1,8 +1,8 @@
 
-function Bio() {
+function Contact() {
   return (
-    <div>Sabrin is a homestead icon who lives in ashville NC</div>
+    <div>CONTACT SABO</div>
   )
 }
 
-export default Bio
+export default Contact
