@@ -1,6 +1,8 @@
 function Comedy() {
     return (
-      <div>SILLY GOOSE</div>
+      <div>
+        <h1>stand up sets, Ernie video?, improv?</h1>
+      </div>
     )
   }
   

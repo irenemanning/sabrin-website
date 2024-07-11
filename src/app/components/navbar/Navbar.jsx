@@ -5,13 +5,19 @@ import Link from 'next/link'
 function Navbar() {
   const [nav, setNav] = useState(false)
 
-  const links =  [
+  const rowOneLinks =  [
     { title: "Home", path: "/" },
-    { title: "Bio", path: "/bio" },
-    {title: "Comedy", path: "/comedy"},
+    { title: "About", path: "/about" },
+    {title: "Shows", path: "/shows"},
+    {title: "Contact", path: "/contact"},
+  ]
+  const rowTwoLinks =  [
     {title: "Acting", path: "/acting"},
-    {title: "Press", path: "/press"},
-    {title: "Contact", path: "/contact"}
+    {title: "Comedy", path: "/comedy"},
+    {title: "Films", path: "/films"},
+    {title: "Performances", path: "/performances"},
+    {title: "Modeling", path: "/modeling"},
+    {title: "Visual Art", path: "/visualart"},
   ]
 
   return (
@@ -25,7 +31,12 @@ function Navbar() {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map((link) => (
+        {rowOneLinks.map((link) => (
+          <li key={link.title} className="nav-links px-4 cursor-pointer capitalize font-medium text-black-500 hover:scale-105 hover:text-white duration-200 link-underline">
+            <Link href={link.path}>{link.title}</Link>
+          </li>
+        ))}
+        {rowTwoLinks.map((link) => (
           <li key={link.title} className="nav-links px-4 cursor-pointer capitalize font-medium text-black-500 hover:scale-105 hover:text-white duration-200 link-underline">
             <Link href={link.path}>{link.title}</Link>
           </li>
