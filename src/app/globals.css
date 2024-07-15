@@ -28,6 +28,7 @@ body {
   font-size: calc(10px + 2vmin);
   margin-top: 150px;
   margin-left: 20%;
+  margin-right: 10%;
 }
 
 @layer utilities {
