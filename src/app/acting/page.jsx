@@ -32,7 +32,16 @@ function Acting() {
       </div>
       <div>
         <h1>Prodigal Son by John Patrick Shanley</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/c5qgeRSOauA?si=u6Yib_HcOSioo4p0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/c5qgeRSOauA?si=u6Yib_HcOSioo4p0"
+          title="YouTube video player"
+          style={{ border: 'none' }}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
       <div>
         <h1>Prodigal Son monologue</h1>
@@ -71,7 +80,7 @@ function Acting() {
         ></iframe>
       </div>
     </div>
-  );
+  )
 }
 
 export default Acting
