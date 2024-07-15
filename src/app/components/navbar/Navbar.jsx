@@ -23,7 +23,7 @@ function Navbar() {
   return (
     <div className="fixed top-0 left-0 z-50 flex flex-col h-full w-64 text-white bg-black p-4">
       <div className="mb-8">
-        <h1 className="text-5xl font-signature text-white">
+        <h1 className="text-5xl font-signature text-yellow-500">
           <Link href="/">Sabrín Diehl</Link>
         </h1>
       </div>

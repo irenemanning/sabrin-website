@@ -4,7 +4,6 @@ function Acting() {
 
   return (
     <div>
-      HEADSHOTS, Actor Resume, digitals,
       <div>
         <h1>Somewhere Over The Pacific</h1>
         <iframe
@@ -33,8 +32,8 @@ function Acting() {
       <div>
         <h1>Prodigal Son by John Patrick Shanley</h1>
         <iframe
-          width="560"
-          height="315"
+          width="640"
+          height="480"
           src="https://www.youtube.com/embed/c5qgeRSOauA?si=u6Yib_HcOSioo4p0"
           title="YouTube video player"
           style={{ border: 'none' }}
