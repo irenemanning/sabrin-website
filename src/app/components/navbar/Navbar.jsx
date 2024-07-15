@@ -1,61 +1,63 @@
 "use client"
-import { useState } from 'react'
-import Link from 'next/link'
+import { useState } from "react"
+import Link from "next/link"
+import { useRouter, usePathname } from "next/navigation" 
 
 function Navbar() {
   const [nav, setNav] = useState(false)
+  const { pathname } = usePathname() 
 
-  const rowOneLinks =  [
+  const links = [
     { title: "Home", path: "/" },
     { title: "About", path: "/about" },
-    {title: "Shows", path: "/shows"},
-    {title: "Contact", path: "/contact"},
-  ]
-  const rowTwoLinks =  [
-    {title: "Acting", path: "/acting"},
-    {title: "Comedy", path: "/comedy"},
-    {title: "Films", path: "/films"},
-    {title: "Performances", path: "/performances"},
-    {title: "Modeling", path: "/modeling"},
-    {title: "Visual Art", path: "/visualart"},
+    { title: "Shows", path: "/shows" },
+    { title: "Contact", path: "/contact" },
+    { title: "Acting", path: "/acting" },
+    { title: "Comedy", path: "/comedy" },
+    { title: "Films", path: "/films" },
+    { title: "Performances", path: "/performances" },
+    // { title: "Modeling", path: "/modeling" },
+    // { title: "Visual Art", path: "/visualart" },
   ]
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center h-20 px-4 text-black nav" style={{background: "rgb(195, 240, 252)"}}>
-      <div className='cm-logo'>
-        <h1 className="text-5xl font-signature ml-2">
-          <a className="link-underline link-underline-black" href="/" rel="noreferrer">
-            Sabrín Diehl
-          </a>
+    <div className="fixed top-0 left-0 z-50 flex flex-col h-full w-64 text-white bg-black p-4">
+      <div className="mb-8">
+        <h1 className="text-5xl font-signature text-white">
+          <Link href="/">Sabrín Diehl</Link>
         </h1>
       </div>
 
-      <ul className="hidden md:flex">
-        {rowOneLinks.map((link) => (
-          <li key={link.title} className="nav-links px-4 cursor-pointer capitalize font-medium text-black-500 hover:scale-105 hover:text-white duration-200 link-underline">
-            <Link href={link.path}>{link.title}</Link>
-          </li>
-        ))}
-        {rowTwoLinks.map((link) => (
-          <li key={link.title} className="nav-links px-4 cursor-pointer capitalize font-medium text-black-500 hover:scale-105 hover:text-white duration-200 link-underline">
-            <Link href={link.path}>{link.title}</Link>
-          </li>
-        ))}
+      <button
+        onClick={() => setNav(!nav)}
+        className="md:hidden text-gray-500 mb-8"
+      >
+        {nav ? "Close" : "Menu"}
+      </button>
+
+      <ul
+        className={`flex flex-col space-y-4 
+          ${nav ? "block" : "hidden"} 
+          md:flex md:space-y-0 md:space-x-4`}
+      >
+        {links.map((link) => {
+  console.log('pathname:', pathname)
+  console.log('link.path:', link.path)
+  return (
+    <li
+      key={link.title}
+      className={`nav-links capitalize font-medium ${
+        pathname === link.path ? "text-yellow-500" : "text-white"
+      } hover:scale-105 hover:text-yellow-500 duration-200`}
+    >
+      <Link href={link.path} onClick={() => setNav(false)}>
+        {link.title}
+      </Link>
+    </li>
+  )
+})}
+
       </ul>
-
-      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"></div>
-
-      {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-          {links.map((link) => (
-            <li key={link.title} className="px-4 cursor-pointer capitalize py-6 text-4xl">
-              <Link onClick={() => setNav(!nav)} href={link.path}>
-                {link.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
     </div>
   )
 }

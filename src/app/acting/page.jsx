@@ -4,7 +4,7 @@ function Acting() {
 
   return (
     <div>
-      HEADSHOTS, Actor Resume, digitals, Prodigal Son monologue,
+      HEADSHOTS, Actor Resume, digitals,
       <div>
         <h1>Somewhere Over The Pacific</h1>
         <iframe
