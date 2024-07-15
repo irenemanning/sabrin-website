@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  color: gold;
+  color: rgb(234 179 8);
   background: black;
   min-height: 100vh;
   display: flex;
@@ -27,6 +27,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   margin-top: 150px;
+  margin-left: 20%;
 }
 
 @layer utilities {

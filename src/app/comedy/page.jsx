@@ -4,8 +4,7 @@ function Comedy() {
       <div>
         <h1>Ernie has therapy on Zoom for the first time during the 2020 lockdown</h1>
         <iframe
-          width="560"
-          height="315"
+          width="640" height="480"
           src="https://www.youtube.com/embed/4vGl0DTBZIY?si=wAgx6D3XzA4fvGdD"
           title="YouTube video player"
           style={{ border: 'none' }}
@@ -16,6 +15,7 @@ function Comedy() {
       </div>
       <div>
         <h1>Stand-up set, MSP, 06/10/24</h1>
+        <iframe src="https://drive.google.com/file/d/1W6O3d9pP6n7Tg1qmfEMfVNtDhRQgRHVi/preview" width="640" height="480" allow="autoplay"></iframe>
       </div>
     </div>
   )

@@ -41,8 +41,8 @@ function Navbar() {
           md:flex md:space-y-0 md:space-x-4`}
       >
         {links.map((link) => {
-  console.log('pathname:', pathname)
-  console.log('link.path:', link.path)
+  // console.log('pathname:', pathname)
+  // console.log('link.path:', link.path)
   return (
     <li
       key={link.title}
