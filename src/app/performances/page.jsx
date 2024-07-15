@@ -22,6 +22,7 @@ function Performances() {
           height="480"
           allow="autoplay"
           style={{ border: 'none' }}
+          allowFullScreen
         ></iframe>
       </div>
       <div>
