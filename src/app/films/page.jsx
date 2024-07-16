@@ -3,9 +3,8 @@ import React from 'react'
 function Films() {
   return (
     <div>
-        <h1>Films by Sabo Diehl</h1>
         <div>
-          <h1>Comiendo Mierda</h1>
+          <h1>Sabrín Diehl on Comiendo Mierda</h1>
           <iframe src="https://drive.google.com/file/d/1NdjPUx1tZaui_zHtsQPGT8Y0K6_gSZ4A/preview" width="640" height="480" allow="autoplay"></iframe>
         </div>
         <div>

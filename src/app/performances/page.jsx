@@ -1,8 +1,19 @@
 function Performances() {
   return (
     <div>
-      <div>
-        <h1>Full Lay Lady Lay drag set</h1>
+      <div className="md:ml-10 mt-10 mb-10">
+        <h1>A Moooving Evening at the Cowbaret</h1>
+        <iframe
+          src="https://drive.google.com/file/d/1xiVlt-5MYekiA5kY9R0HEveDMsIDuVnU/preview"
+          width="640"
+          height="480"
+          allow="autoplay"
+          style={{ border: 'none' }}
+          allowFullScreen
+        ></iframe>
+      </div>
+      <div className="md:ml-10 mt-10 mb-10">
+        <h1>LIL&apos; GENTLEMAN DRAG -  Lay Lady Lay</h1>
         <iframe
           width="640"
           height="480"
@@ -14,18 +25,7 @@ function Performances() {
           allowFullScreen
         ></iframe>
       </div>
-      <div>
-        <h1>A Moooving Evening at the Cowbaret</h1>
-        <iframe
-          src="https://drive.google.com/file/d/1xiVlt-5MYekiA5kY9R0HEveDMsIDuVnU/preview"
-          width="640"
-          height="480"
-          allow="autoplay"
-          style={{ border: 'none' }}
-          allowFullScreen
-        ></iframe>
-      </div>
-      <div>
+      <div className="md:ml-10 mt-10 mb-10">
         <h1>LIL&apos; GENTLEMAN DRAG - White Rabbit/Going to California</h1>
         <iframe
           width="640"

@@ -4,7 +4,14 @@ function Acting() {
 
   return (
     <div>
-      <div>
+      <div className="flex space-x-4">
+      <img src="/photos/Sabrinheadshot1.jpg" alt="" className="md:w-1/4 rounded shadow-lg" />
+      <img src="/photos/Sabrinheadshot2.jpg" alt="" className="md:w-1/4 rounded shadow-lg" />
+      <img src="/photos/Sabrinheadshot3.jpg" alt="" className="md:w-1/4 rounded shadow-lg" />
+      <img src="/photos/Sabrinheadshot4.jpg" alt="" className="md:w-1/4 rounded shadow-lg" />
+    </div>
+    <p className="text-sm">Photographs by Alison Viana</p>
+      <div className="md:ml-10 mt-10 mb-10">
         <h1>Somewhere Over The Pacific</h1>
         <iframe
           style={iframeStyle}
@@ -16,7 +23,7 @@ function Acting() {
           loading="lazy"
         ></iframe>
       </div>
-      <div>
+      <div className="md:ml-10 mt-10 mb-10">
         <h1>Tomorrow&apos;s Wish by Wade Bradford</h1>
         <iframe
           width="640"
@@ -29,7 +36,7 @@ function Acting() {
           allowFullScreen
         ></iframe>
       </div>
-      <div>
+      <div className="md:ml-10 mt-10 mb-10">
         <h1>Prodigal Son by John Patrick Shanley</h1>
         <iframe
           width="640"
@@ -42,10 +49,7 @@ function Acting() {
           allowFullScreen
         ></iframe>
       </div>
-      <div>
-        <h1>Prodigal Son monologue</h1>
-      </div>
-      <div>
+      <div className="md:ml-10 mt-10 mb-10">
         <h1>Conjunction Not A Function</h1>
         <iframe
           width="640"
@@ -58,7 +62,7 @@ function Acting() {
           allowFullScreen
         ></iframe>
       </div>
-      <div>
+      <div className="md:ml-10 mt-10 mb-10">
         <h1>Calvin Klein Campaigne</h1>
         <iframe
           src="https://drive.google.com/file/d/1UZ2eogu00EDEMWNYsWewZsvyW4FMgKNG/preview"
@@ -69,7 +73,7 @@ function Acting() {
           allowFullScreen
         ></iframe>
       </div>
-      <div>
+      <div className="md:ml-10 mt-10 mb-10">
         <h1>MUTT</h1>
         <iframe
           src="https://drive.google.com/file/d/16aPYzQjEC1L6ELSytcnOKjTKOT2a0ODT/preview"

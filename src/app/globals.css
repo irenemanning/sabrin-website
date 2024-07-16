@@ -29,6 +29,7 @@ body {
   margin-top: 150px;
   margin-left: 20%;
   margin-right: 10%;
+  margin-bottom: 10%;
 }
 
 @layer utilities {
