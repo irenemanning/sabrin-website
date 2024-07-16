@@ -2,7 +2,7 @@ function Comedy() {
   return (
     <div>
       <div>
-        <h1>Ernie has therapy on Zoom for the first time during the 2020 lockdown</h1>
+        <h1>Ernie Has Therapy on Zoom For The First Time During The 2020 Lockdown</h1>
         <iframe
           width="640" height="480"
           src="https://www.youtube.com/embed/4vGl0DTBZIY?si=wAgx6D3XzA4fvGdD"
