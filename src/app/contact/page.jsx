@@ -1,4 +1,4 @@
-// import InstagramEmbed from 'react-instagram-embed'
+
 function Contact() {
   return (
     <div className="flex items-center justify-center space-x-4">
@@ -9,14 +9,7 @@ function Contact() {
         <h3>sabridiehl1@gmail.com</h3>
          <h3>Follow me on Instagram @soysabrin</h3>
       </div>
-      {/* <InstagramEmbed
-        url="https://www.instagram.com/soysabrin/"
-        maxWidth={320}
-        hideCaption={false}
-        containerTagName="div"
-        protocol=""
-        injectScript
-      /> */}
+    
     </div>
   )
 }
